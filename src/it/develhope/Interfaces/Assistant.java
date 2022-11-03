@@ -11,6 +11,18 @@ public class Assistant extends CollegePerson implements ITeachingPerson,ILearnin
         this.isGoingToBeAPhD=willBeAPhD;
     }
 
+
+    public String goToCollege(){
+        String out;
+        if (this.isGoingToBeAPhD==true) {
+            out = "Im goind to be a Phd";
+
+        } else{
+                out = "im not going to be a Phd";
+            }
+
+        return "im " + name + " " + surname + " " + collegeId +" " + out;
+    }
     @Override
     public String studyAtHome() {
         return " I prefer to study from home";

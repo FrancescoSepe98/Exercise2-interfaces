@@ -11,6 +11,9 @@ public class Student extends CollegePerson implements ILearningPerson {
     }
 
     @Override
+    public String goToCollege(){
+        return "im " + name + " " + surname + " " + collegeId +" " + "and im am at the " + academicYear + " year of college";
+    }
     public String studyAtHome() {
 
         return goToCollege() + " and i prefer to study from home";

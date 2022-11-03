@@ -10,6 +10,10 @@ public class Professor extends CollegePerson implements ITeachingPerson {
     }
 
     @Override
+    public String goToCollege(){
+        return "im " + name + " " + surname + " " + collegeId +" " + "my subject is " + teachingSubject;
+    }
+    @Override
     public String teachToOtherPeople() {
         return goToCollege() + " and Im a teacher";
     }
